@@ -1,13 +1,21 @@
 import DisplayResult from "./DisplayResult";
+import Audio from "./Audio";
 export default function Result(props) {
+  console.log(props.meaning);
+
   if (props.meaning) {
     return (
       <div>
         <h2>{props.meaning.word} </h2>
-        <em>
-          <h3>{props.meaning.phonetic}</h3>
-        </em>
-        <h5>{props.meaning.phonetics.audio}</h5>
+        {}
+        {props.meaning.phonetics.map(function (phonetic, index) {
+          return (
+            <div key={index}>
+              <Audio aud={phonetic} />
+            </div>
+          );
+        })}
+
         {props.meaning.meanings.map(function (element, index) {
           return (
             <div key={index}>
