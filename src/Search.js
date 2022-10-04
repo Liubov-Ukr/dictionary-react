@@ -28,6 +28,7 @@ export default function Search(props) {
         <img
           src="https://cdn1.iconfinder.com/data/icons/online-education-95/66/100_wisdom_education_book_owl_knowledge_owl_bird_school_study_wise_history-512.png"
           className="logo"
+          alt="logo-dictionary"
         />
         <h1>Dictionary</h1>
         <section>
