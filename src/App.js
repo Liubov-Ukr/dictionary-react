@@ -6,7 +6,8 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <Search />
+      <Search defaultWord="sunset" />
+
       <Footer />
     </div>
   );

@@ -6,24 +6,27 @@ export default function Result(props) {
   if (props.meaning) {
     return (
       <div>
-        <h2>{props.meaning.word} </h2>
-        {}
-        {props.meaning.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Audio aud={phonetic} />
-            </div>
-          );
-        })}
-
-        {props.meaning.meanings.map(function (element, index) {
-          return (
-            <div key={index}>
-              {" "}
-              <DisplayResult element={element} />
-            </div>
-          );
-        })}
+        <section>
+          <h2>{props.meaning.word} </h2>
+          {}
+          {props.meaning.phonetics.map(function (phonetic, index) {
+            return (
+              <div key={index}>
+                <Audio aud={phonetic} />
+              </div>
+            );
+          })}
+        </section>
+        
+          {props.meaning.meanings.map(function (element, index) {
+            return (
+              <div key={index}>
+                {" "}
+                <DisplayResult element={element} />
+              </div>
+            );
+          })}
+        
       </div>
     );
   } else {
