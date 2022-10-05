@@ -34,7 +34,7 @@ export default function Search(props) {
         <section>
           <label>What word do you want to look up?</label>
           <form onSubmit={handleSearch}>
-            <input type="Search" onChange={changeWord} className="SearchForm" />
+            <input type="Search" onChange={changeWord} className="SearchForm" placeholder="Search for a word" />
             <input type="Submit" className="Submit" />
           </form>
           <p className="PForm">i.e. sun, sunrise, win, coding</p>

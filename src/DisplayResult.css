@@ -1,0 +1,18 @@
+.similar {
+  margin: 20px auto;
+  font-size: 16;
+  line-height: 17px;
+}
+em {
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.Synonyms h3 {
+  margin: 20px auto;
+}

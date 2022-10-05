@@ -1,14 +1,16 @@
 import DisplayResult from "./DisplayResult";
 import Audio from "./Audio";
+import "./Result.css";
 export default function Result(props) {
   console.log(props.meaning);
 
   if (props.meaning) {
     return (
       <div>
-        <section>
+        <section className="Result">
           <h2>{props.meaning.word} </h2>
           {}
+
           {props.meaning.phonetics.map(function (phonetic, index) {
             return (
               <div key={index}>
@@ -17,16 +19,15 @@ export default function Result(props) {
             );
           })}
         </section>
-        
-          {props.meaning.meanings.map(function (element, index) {
-            return (
-              <div key={index}>
-                {" "}
-                <DisplayResult element={element} />
-              </div>
-            );
-          })}
-        
+
+        {props.meaning.meanings.map(function (element, index) {
+          return (
+            <div key={index}>
+              {" "}
+              <DisplayResult element={element} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {
