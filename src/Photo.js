@@ -1,7 +1,6 @@
 import "./Photo.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 export default function Photo(props) {
-  console.log(props.photos);
   if (props.photos) {
     return (
       <section className="row">

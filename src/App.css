@@ -2,18 +2,19 @@ body {
   background: rgb(176, 251, 252);
   background: linear-gradient(
     0deg,
-    rgba(176, 251, 252, 1) 0%,
-    rgb(234 179 249 / 39%) 100%
+    rgba(203 248 249) 0%,
+    rgb(240 208 249 / 39%) 100%
   );
+  font-family: "Cerebri-Sans", Helvetica, Arial, sans-serif;
 }
 
 .App section {
   background-color: white;
-  max-width: 750px;
+  max-width: 950px;
   display: block;
   margin: 15px AUTO;
   padding: 20px 60px;
-  box-shadow: 0px 4px 17px 0px #a5a5a5;
+  box-shadow: 0px 5px 10px 2px rgb(163 164 165 / 20%);
   border-radius: 7px;
 }
 

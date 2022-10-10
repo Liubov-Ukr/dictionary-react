@@ -50,7 +50,7 @@ export default function Search(props) {
               type="Search"
               onChange={changeWord}
               className="SearchForm"
-              placeholder="Search for a word"
+              placeholder={word}
             />
             <input type="Submit" className="Submit" />
           </form>
