@@ -11,13 +11,8 @@ export default function Photo(props) {
               alt={image.alt}
               key={index}
               className="col-sm-4 photo"
-              onClick={originalPhoto}
-            />
+              />
           );
-          function originalPhoto(event) {
-            event.preventDefault();
-            return <a href={image.src.original}></a>;
-          }
         })}
       </section>
     );
