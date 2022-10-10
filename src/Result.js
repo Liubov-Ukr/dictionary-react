@@ -2,8 +2,6 @@ import DisplayResult from "./DisplayResult";
 import Audio from "./Audio";
 import "./Result.css";
 export default function Result(props) {
-  console.log(props.meaning);
-
   if (props.meaning) {
     return (
       <div>

@@ -1,6 +1,5 @@
 import "./Audio.css";
 export default function Audio(props) {
-  console.log(props.aud);
   return (
     <div>
       <a

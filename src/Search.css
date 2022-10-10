@@ -15,6 +15,7 @@ label {
   display: block;
   margin: 0 auto;
   text-align: center;
+  padding-top: 40px;
 }
 .SearchForm {
   width: 80%;
