@@ -33,7 +33,7 @@ export default function Search(props) {
   function handlePhoto(response) {
     SetPhoto(response.data.photos);
   }
-  console.log(meaning);
+ 
   if (loading) {
     return (
       <div>
