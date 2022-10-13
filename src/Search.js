@@ -56,8 +56,8 @@ export default function Search(props) {
           </form>
           <p className="PForm">i.e. sun, sunrise, win, coding</p>
         </section>
-        <Result meaning={meaning} />
         <Photo photos={photo} />
+        <Result meaning={meaning} />
       </div>
     );
   } else {
